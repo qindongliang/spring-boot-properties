@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @SpringBootApplication
 @Configuration
+//加上这行注释避免没有引入数据库驱动，导致工程起不来的问题
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 public class ApplicationMain {
 
